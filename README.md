@@ -1,2 +1,2 @@
-# emprestimo-app
-Aplicativo de controle de empréstimos feito em Java para Android Nativo
+# Emprestimo App
+Aplicativo de controle de empréstimos de equipamentos feito em Java para Android Nativo.
