@@ -28,9 +28,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        //getApplicationContext().deleteDatabase("EmpresaX");
+        getApplicationContext().deleteDatabase("EmpresaX"); //remove o banco de dados
+        //adiciona um novo equipamento
         Equipamentos equip = new Equipamentos("luvas","thor");
         db.equipamentosTable().insertAll(equip);
+
         equipamentos = db.equipamentosTable().getAll();
         ArrayAdapter<Equipamentos> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, equipamentos);
 

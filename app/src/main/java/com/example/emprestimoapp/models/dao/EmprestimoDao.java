@@ -25,8 +25,8 @@ public interface EmprestimoDao {
     @Insert
     void insertAll(Emprestimo... emprestimos);
 
-    @Delete
-    void delete(Emprestimo emprestimo);
+    @Query("DELETE FROM emprestimo WHERE numEmpres = :numEmpres")
+    void delete(int numEmpres);
 
     @Query("DELETE FROM emprestimo")
     void deleteAll();

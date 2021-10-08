@@ -30,6 +30,17 @@ public class Emprestimo {
         this.devolvido = false;
     }
 
+    @Override
+    public String toString() {
+        return "Emprestimo{" +
+                "numEmpres=" + numEmpres +
+                ", equipamentoId=" + equipamentoId +
+                ", nomePessoa='" + nomePessoa + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", data='" + data + '\'' +
+                ", devolvido=" + devolvido +
+                '}';
+    }
 
     public int getNumEmpres() {
         return numEmpres;
