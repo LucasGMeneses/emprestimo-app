@@ -4,6 +4,11 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import com.example.emprestimoapp.models.AppDatabase;
+import com.example.emprestimoapp.pages.EquipamentosPage;
+
+import java.util.List;
+
 @Entity(tableName = "equipamentos")
 public class Equipamentos {
     @PrimaryKey(autoGenerate = true)
