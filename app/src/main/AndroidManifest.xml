@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmprestimoApp">
         <activity
+            android:name=".pages.EditarEmprestimoPage"
+            android:exported="true" />
+        <activity
+            android:name=".pages.EditarEquipamentoPage"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

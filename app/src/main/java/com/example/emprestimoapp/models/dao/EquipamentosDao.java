@@ -16,6 +16,9 @@ public interface EquipamentosDao {
     @Query("SELECT * FROM equipamentos")
     List<Equipamentos> getAll();
 
+    @Query("SELECT * FROM equipamentos WHERE equipamentosId = :equipId")
+    Equipamentos get(int equipId);
+
     @Query("SELECT * FROM equipamentos WHERE equipamentosId IN (:equipamentosIds)")
     List<Equipamentos> loadAllByIds(int[] equipamentosIds);
 

@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey;
                 parentColumns = "equipamentosId", childColumns = "equipamentoId"))
 public class Emprestimo {
     @PrimaryKey(autoGenerate = true)
-    int numEmpres = 0;
+    int numEmpres;
     @ColumnInfo
     int equipamentoId; // foreign key
     @ColumnInfo
@@ -22,24 +22,22 @@ public class Emprestimo {
     @ColumnInfo
     boolean devolvido;
 
-    public Emprestimo(int equipamentoId, String nomePessoa, String telefone, String data) {
+    public Emprestimo(String nomePessoa, String telefone, String data, int equipamentoId) {
         this.equipamentoId = equipamentoId;
         this.nomePessoa = nomePessoa;
         this.telefone = telefone;
         this.data = data;
-        this.devolvido = false;
     }
 
     @Override
     public String toString() {
-        return "Emprestimo{" +
-                "numEmpres=" + numEmpres +
-                ", equipamentoId=" + equipamentoId +
-                ", nomePessoa='" + nomePessoa + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", data='" + data + '\'' +
-                ", devolvido=" + devolvido +
-                '}';
+        return
+                "Id=" + numEmpres +
+                "\nEquipamentoId=" + equipamentoId +
+                "\nNomePessoa: " + nomePessoa +
+                "\nTel: " + telefone +
+                "\nData: " + data +
+                "\nDevolvido? " + devolvido;
     }
 
     public int getNumEmpres() {

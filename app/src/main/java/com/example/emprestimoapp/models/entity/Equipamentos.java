@@ -12,7 +12,7 @@ import java.util.List;
 @Entity(tableName = "equipamentos")
 public class Equipamentos {
     @PrimaryKey(autoGenerate = true)
-    int equipamentosId = 0;
+    int equipamentosId;
     @ColumnInfo
     String nomeEquip;
     @ColumnInfo
@@ -25,11 +25,9 @@ public class Equipamentos {
 
     @Override
     public String toString() {
-        return "Equipamentos{" +
-                "equipamentosId=" + equipamentosId +
-                ", nomeEquip='" + nomeEquip + '\'' +
-                ", marca='" + marca + '\'' +
-                '}';
+        return "Id: " + equipamentosId +
+                "\nEquipamento: " + nomeEquip +
+                "\nMarca: " + marca;
     }
 
     public String getNomeEquip() {

@@ -16,6 +16,9 @@ public interface EmprestimoDao {
     @Query("SELECT * FROM emprestimo")
     List<Emprestimo> getAll();
 
+    @Query("SELECT * FROM emprestimo WHERE numEmpres = :numEmpres")
+    Emprestimo get(int numEmpres);
+
     @Query("SELECT * FROM emprestimo WHERE numEmpres IN (:numEmpres)")
     List<Emprestimo> loadAllByIds(int[] numEmpres);
 

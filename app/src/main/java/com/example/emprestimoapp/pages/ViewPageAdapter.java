@@ -1,4 +1,4 @@
-package com.example.emprestimoapp;
+package com.example.emprestimoapp.pages;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
