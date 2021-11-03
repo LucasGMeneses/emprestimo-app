@@ -2,6 +2,12 @@
 Aplicativo de controle de empréstimos de equipamentos feito em Java para o 
 Trabalho 1 da disciplina Programação para Dispositivos Móveis.
 
-[apresentação](https://drive.google.com/file/d/1pu9SG0GOTjqD9Qc7i6uuMToEGDp0d3U3/view?usp=sharing)
+
 ## Alunos
 Alexandre Lauer Cordonet e Lucas Gomes Meneses. 
+
+## screenshot
+<img src="sreenshot/st2.png" alt="st2" width="300"/>
+<img src="sreenshot/st1.png" alt="st1" width="300"/>
+<img src="sreenshot/st3.png" alt="st3" width="300"/>
+<img src="sreenshot/st4.png" alt="st4" width="300"/>
